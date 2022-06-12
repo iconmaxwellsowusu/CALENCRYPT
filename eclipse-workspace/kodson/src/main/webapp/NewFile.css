@@ -1,0 +1,6 @@
+.table {border: 1px solid black!important;} 
+.table tr, .table td, .table th {border: 0!important;}
+.table tr td, 
+.table tr th {border-left: 0px solid black!important;}
+.table tr td:nth-child(1), 
+.table tr th:nth-child(1) {border-left: 0!important;}
