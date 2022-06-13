@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>downloadPDF</servlet-name>
+  	<display-name>downloadPDF</display-name>
+  	<description></description>
+  	<servlet-class>testpdf.downloadPDF</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>PDFServlet</servlet-name>
+  	<display-name>PDFServlet</display-name>
+  	<description></description>
+  	<servlet-class>testpdf.PDFServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>testpdf</servlet-name>
+  	<display-name>testpdf</display-name>
+  	<description></description>
+  	<servlet-class>com.itextpdf.testpdf</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>testpdfitext</servlet-name>
+  	<display-name>testpdfitext</display-name>
+  	<description></description>
+  	<servlet-class>com.test.testpdf</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>downloadPDF</servlet-name>
+  	<url-pattern>/downloadPDF</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>PDFServlet</servlet-name>
+  	<url-pattern>/PDFServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>testpdf</servlet-name>
+  	<url-pattern>/testpdf</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>testpdfitext</servlet-name>
+  	<url-pattern>/testpdfitext</url-pattern>
+  </servlet-mapping>
+</web-app>
